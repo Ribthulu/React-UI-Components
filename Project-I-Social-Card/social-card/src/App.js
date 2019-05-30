@@ -1,9 +1,20 @@
+/*jshint esversion: 6 */
+
 import React from 'react';
 import './App.css';
+import HeaderContent from "./HeaderContent.js";
+import HeaderTitle from "./HeaderTitle.js";
+import ImageThumbnail from "./ImageThumbnail.js";
+import HeaderContainer from "./HeaderContainer.js"
 
 const App = () => {
   return (
     <div>
+      <div className="HeaderContainer">
+        <ImageThumbnail />
+        <HeaderTitle />
+        <HeaderContent />
+     </div>
       <h3>Welcome to React Social Card!</h3>
       <p>
         Begin by exploring the `components` directory. You'll notice we have a
