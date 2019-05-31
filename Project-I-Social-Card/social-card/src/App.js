@@ -2,18 +2,16 @@
 
 import React from 'react';
 import './App.css';
-import HeaderContent from "./HeaderContent.js";
-import HeaderTitle from "./HeaderTitle.js";
-import ImageThumbnail from "./ImageThumbnail.js";
-import HeaderContainer from "./HeaderContainer.js"
+// import HeaderContent from "./HeaderContent.js";
+// import HeaderTitle from "./HeaderTitle.js";
+// import ImageThumbnail from "./ImageThumbnail.js";
+import HeaderContainer from "./components/HeaderComponents/HeaderContainer.js";
 
 const App = () => {
   return (
-    <div>
+    <div className="App">
       <div className="HeaderContainer">
-        <ImageThumbnail />
-        <HeaderTitle />
-        <HeaderContent />
+        <HeaderContainer />
      </div>
       <h3>Welcome to React Social Card!</h3>
       <p>
