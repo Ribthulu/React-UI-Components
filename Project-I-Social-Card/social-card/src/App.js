@@ -8,7 +8,7 @@ import CardContainer from "./components/CardComponents/CardContainer.js";
 const App = () => {
   return (
     <div className="App">
-      <div className="HeaderContainer">
+      <div>
         <HeaderContainer />
         <CardContainer />
       </div>

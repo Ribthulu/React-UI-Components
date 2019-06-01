@@ -3,8 +3,16 @@
 import React from 'react';
 import './Header.css';
 
+
+
+
 function HeaderTitle() {
-  return <h5>{"U+00040"}LambdaSchool handle {"U+026AC"} May 30th</h5>;
+  return (
+    <div class="HeaderTitle HR">
+      <h1>Lambda School</h1>
+      <h5>{"@"}Lambdaschool {"\u2022"} 26 Jan</h5>
+    </div>
+  )
 }
 
 export default HeaderTitle;
