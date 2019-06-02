@@ -16,14 +16,20 @@
   color: white;
 }
 
-.Clear{
+.Clear, .Zero{
   display: flex;
   flex: 3;
   height: 100px;
+  justify-content: center;
   align-items: center;
   font-size: 50px;
   background-color: grey;
   color: white;
   outline: 1px solid black;
   height: 100px;
+}
+
+.button:last-child{
+  background-color: darkred;
+  color: white;
 }

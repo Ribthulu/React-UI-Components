@@ -1,16 +1,16 @@
 /*jshint esversion: 6 */
 
-// import React from 'react';
-// import './Button.css';
-//
-// function NumberButton(props) {
-//
-//   return (
-//     <div className="NumberButton-card">
-//       <button className={props.buttonStyle}>{props.text}</button>
-//     </div>
-//   );
-// }
-//
-//
-// export default NumberButton;
+import React, { Component } from 'react';
+import './Button.css';
+
+class Zero extends Component {
+  render () {
+    return(
+      <div className="Zero">
+        {this.props.children}
+      </div>
+    )
+  }
+}
+
+export default Zero;

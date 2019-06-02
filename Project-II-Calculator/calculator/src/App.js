@@ -5,8 +5,24 @@ import './App.css';
 import CalculatorDisplay from './components/DisplayComponents/CalculatorDisplay';
 import ActualButton from './components/ButtonComponents/ActualButton';
 import Clear from './components/ButtonComponents/ActionButton';
+import Zero from './components/ButtonComponents/NumberButton';
 
 class App extends Component {
+  constructor(props){
+    super(props);
+
+    this.state = {
+      input: "",
+      previousNumber: "",
+      currentNumber: "",
+      operator: "",
+    };
+  }
+
+  addToInput = value => {
+  this.setState ({input: this.state.input + value });
+};
+
   render() {
     return(
       <div className="App">
@@ -14,7 +30,7 @@ class App extends Component {
           <CalculatorDisplay />
           <div className="row">
             <Clear>Clear</Clear>
-            <ActualButton className="button">/</ActualButton>
+            <ActualButton className="button" handleClick={this.addToInput}>/</ActualButton>
           </div>
           <div className="row">
             <ActualButton className="button">7</ActualButton>
@@ -35,7 +51,7 @@ class App extends Component {
           <ActualButton className="button">+</ActualButton>
           </div>
           <div className="row">
-            <ActualButton className="button">0</ActualButton>
+            <Zero>0</Zero>
             <ActualButton className="button">=</ActualButton>
           </div>
         </div>

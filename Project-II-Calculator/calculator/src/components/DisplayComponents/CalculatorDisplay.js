@@ -8,7 +8,7 @@ function CalculatorDisplay() {
 
   return (
     <div className="CalculatorDisplay">
-    0
+     0
     </div>
   );
 }

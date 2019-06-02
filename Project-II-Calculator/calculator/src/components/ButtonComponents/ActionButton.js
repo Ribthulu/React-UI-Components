@@ -13,14 +13,14 @@ class Clear extends Component {
   }
 }
 
-// class Clear extends Component {
-//   render () {
-//     return(
-//       <div className="Clear">
-//         {this.props.children}
-//       </div>
-//     )
-//   }
-// }
+class Zero extends Component {
+  render () {
+    return(
+      <div className="Zero">
+        {this.props.children}
+      </div>
+    )
+  }
+}
 
 export default Clear;

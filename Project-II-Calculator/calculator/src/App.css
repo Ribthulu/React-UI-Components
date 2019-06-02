@@ -17,3 +17,8 @@
   display: flex;
   width: 100%;
 }
+
+#equal{
+  background-color: darkred;
+  color: white;
+}
