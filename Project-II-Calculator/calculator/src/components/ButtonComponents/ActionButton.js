@@ -3,14 +3,24 @@
 import React, { Component } from 'react';
 import './Button.css';
 
-class ActionButton extends Component {
+class Clear extends Component {
   render () {
     return(
-      <div className="ActionButton">
+      <div className="Clear">
         {this.props.children}
       </div>
     )
   }
 }
 
-export default ActionButton;
+// class Clear extends Component {
+//   render () {
+//     return(
+//       <div className="Clear">
+//         {this.props.children}
+//       </div>
+//     )
+//   }
+// }
+
+export default Clear;
