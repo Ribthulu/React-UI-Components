@@ -1,0 +1,22 @@
+.CalculatorDisplay {
+  /* display: flex;
+  color: white;
+  background: black;
+  height: 300px;
+  font-size: 50px;
+  text-align: right;
+  padding: 10px; */
+
+  display: block;
+  margin-right: 10px;
+  width: 90%;
+  flex: 1;
+  text-align: right;
+  vertical-align: middle;
+  font-size: 50px;
+  background-color: black;
+  color: white;
+  outline: 1px solid black;
+  height: 90px;
+  padding: 5%;
+}

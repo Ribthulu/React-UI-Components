@@ -1,25 +1,44 @@
 /*jshint esversion: 6 */
 
-import React from 'react';
+import React, { Component } from 'react';
 import './App.css';
+import CalculatorDisplay from './components/DisplayComponents/CalculatorDisplay';
+import ActualButton from './components/ButtonComponents/ActualButton';
 
-const App = () => {
-  return (
-    <div>
-      <h3>Welcome to React Calculator</h3>
-      <p>
-        We have given you a starter project. You'll want to build out your
-        components in their respective files, remove this code and replace it
-        with the proper components.
-      </p>
-      <p>
-        <strong>
-          Don't forget to `default export` your components and import them here
-          inside of this file in order to make them work.
-        </strong>
-      </p>
-    </div>
-  );
-};
+class App extends Component {
+  render() {
+    return(
+      <div className="App">
+        <div className="display">
+          <CalculatorDisplay />
+          <div className="row">
+            <ActualButton className="button">7</ActualButton>
+            <ActualButton className="button">8</ActualButton>
+            <ActualButton className="button">9</ActualButton>
+            <ActualButton className="button">/</ActualButton>
+          </div>
+          <div className="row">
+            <ActualButton className="button">4</ActualButton>
+            <ActualButton className="button">5</ActualButton>
+            <ActualButton className="button">6</ActualButton>
+            <ActualButton className="button">*</ActualButton>
+          </div>
+          <div className="row">
+            <ActualButton className="button">1</ActualButton>
+            <ActualButton className="button">2</ActualButton>
+            <ActualButton className="button">3</ActualButton>
+            <ActualButton className="button">+</ActualButton>
+          </div>
+          <div className="row">
+            <ActualButton className="button">.</ActualButton>
+            <ActualButton className="button">0</ActualButton>
+            <ActualButton className="button">=</ActualButton>
+            <ActualButton className="button">-</ActualButton>
+          </div>
+        </div>
+      </div>
+    );
+  }
+}
 
 export default App;
